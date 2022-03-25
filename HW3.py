@@ -14,7 +14,7 @@ class Instagram(SocialMedia):
     def PublishNewPost(self,body):
         if len(body) < 2200 :
             self.PostList.append(body)
-        else : print('larg size')
+        else : print('Your post should not be larger than 2200 characters.')
 
 
     def GetPosts(self):
@@ -31,10 +31,13 @@ class Twitter(SocialMedia):
     def CreateNewTweet(self,body):
         if len(body) < 280 :
             self.TweetsList.append(body)
-        else : print('larg size')
+        else : print('Your tweet should not be larger than 280 characters.')
+
 
 
     def getTweets(self):
         return self.TweetsList 
+    
+    
     
     
